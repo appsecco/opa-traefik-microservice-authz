@@ -1,0 +1,13 @@
+sequenceDiagram
+    Mr.Bob ->> Traefik: Give me /api-1
+    Traefik->>OPA: Hey! Is this authorized?
+    OPA--x Traefik: Nope
+    Traefik-x Mr.Bob: Oops! Boss said no
+    Mr.Bob ->> Traefik: Give me /api-1 (Token)
+    Traefik->>OPA: Hey! Is this authorized?
+    OPA-->> Traefik: Yep! All good
+    Traefik->>Service1: Here, this request is for you
+    Service1->>Traefik: Here is the response
+    Traefik->>Mr.Bob: Here you go
+
+

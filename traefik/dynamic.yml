@@ -1,0 +1,37 @@
+http:
+  routers:
+    api-1:
+      rule: "PathPrefix(`/api-1`)"
+      service: api-1
+      middlewares:
+      - "dummy_auth"
+      - "middleware-auth-opa"
+    api-2:
+      rule: "PathPrefix(`/api-2`)"
+      service: api-2
+      middlewares:
+      - "dummy_auth"
+      - "middleware-auth-opa"
+    web:
+      rule: "PathPrefix(`/`)"
+      service: web
+  middlewares:
+    dummy_auth:
+      forwardAuth:
+        address: "http://middleware-auth-dummy"
+    middleware-auth-opa:
+      forwardAuth:
+        address: "http://middleware-auth-opa"
+  services:
+    api-1:
+      loadBalancer:
+        servers:
+        - url: http://api-1
+    api-2:
+      loadBalancer:
+        servers:
+        - url: http://api-2
+    web:
+      loadBalancer:
+        servers:
+        - url: http://web
