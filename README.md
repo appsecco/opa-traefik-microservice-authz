@@ -1,11 +1,11 @@
 # Microservices Authorization using Open Policy Agent and API Gateway
-This is a proof of concept implementation of using Open Policy Agent for micro-services authorization in API Gateway (Traefik).
+This is a proof of concept implementation of using Open Policy Agent for microservices authorization in API Gateway (Traefik).
 
 ## Why
 
-Authentication and authorization in a micro-services environment is non-trivial. This becomes especially true when identity and authorization controls are distributed across different applications.
+Authentication and authorization in a microservices environment is non-trivial. This becomes especially true when identity and authorization controls are distributed across different applications.
 
-In this proof of concept scenario, we want to demonstrate using the *API Gateway* pattern for centralized enforcement of authorization rules.
+In this proof of concept scenario, we want to demonstrate using the *API Gateway* pattern for centralised enforcement of authorisation rules.
 
 To do this, we use following components
 
