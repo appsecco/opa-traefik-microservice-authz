@@ -5,7 +5,7 @@ This is a proof of concept implementation of using Open Policy Agent for microse
     <img src="docs/banner.png"></img>
 </a>
 
-> Detailed description of our use-case and implementation is available in our blog
+> Detailed description of our use-case and implementation is available in our blog - 
 > [https://blog.appsecco.com/microservices-authorization-using-open-policy-agent-and-traefik-api-gateway-ae30f3bf2846](https://blog.appsecco.com/microservices-authorization-using-open-policy-agent-and-traefik-api-gateway-ae30f3bf2846)
 
 ## Why
