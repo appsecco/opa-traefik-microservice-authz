@@ -1,6 +1,11 @@
 # Microservices Authorization using Open Policy Agent and API Gateway
 This is a proof of concept implementation of using Open Policy Agent for microservices authorization in API Gateway (Traefik).
 
+
+A detailed blog post describing the solution is available in our blog:
+
+[https://blog.appsecco.com/microservices-authorization-using-open-policy-agent-and-traefik-api-gateway-ae30f3bf2846](https://blog.appsecco.com/microservices-authorization-using-open-policy-agent-and-traefik-api-gateway-ae30f3bf2846)
+
 ## Why
 
 Authentication and authorization in a microservices environment is non-trivial. This becomes especially true when identity and authorization controls are distributed across different applications.
